@@ -107,3 +107,7 @@ class MyClass {
 $my_class = new MyClass("Sanchiago", 29);
 
 print_r($my_class);
+echo $my_class->name . "\n";
+$my_class -> name = "Pepe" ;
+echo $my_class-> name . "\n";
+echo gettype($my_class);

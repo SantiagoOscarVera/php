@@ -70,3 +70,40 @@ while ($index <= sizeof($mi_array) -1) {  /* el sizeof te indica la longuitud de
 }
 
 /* condicional */
+
+$numero = 13;
+$variable1 = "haasola";
+
+if ($numero = 11 && $variable1 == "hola") {
+    echo "Este numero es 11\n";
+} elseif ($numero = 12 || $variable1 == "hola") {
+    echo "El numero es 12\n";
+} else {
+    echo "El numero NO es 11";
+}
+
+/* funciones */
+
+function print_number($my_number) {
+    echo $my_number . "\n";
+}
+
+print_number(2);
+print_number(3);
+print_number(4);
+
+/* clases */
+
+class MyClass {
+    public $name;
+    public $age;
+
+    function __construct($name, $age){ /* clave ponerle el construct */
+        $this-> name = $name;
+        $this-> age = $age;
+    }
+}
+
+$my_class = new MyClass("Sanchiago", 29);
+
+print_r($my_class);

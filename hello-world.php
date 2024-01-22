@@ -54,3 +54,19 @@ print_r($mi_array);
 print_r(array_unique($mi_array)); /* te deja unicamente valores unicos */
 
 /* flujos */
+for( $index = 0; $index <= 10; $index++ ) { /* recorrer un indice */
+    echo $index . "\n";
+} 
+
+foreach ($mi_array as $my_item){ /* sirve para iterar un array */
+    echo $my_item . "\n";
+} 
+
+$index = 0;
+
+while ($index <= sizeof($mi_array) -1) {  /* el sizeof te indica la longuitud del array, por ende aca es "hasta que sea meno o igual al array", hay que darle un lugar menos con el -1 */
+    echo $mi_array[$index] . "\n";
+    $index++;
+}
+
+/* condicional */
